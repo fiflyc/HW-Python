@@ -12,19 +12,19 @@ class Matrix:
 		:raises ValueError: if lenght of rows is different or object is not 2D iterable
 		"""
 
-		self.__mat = []
+		self.value = []
 		try:
 			for row in array:
-				self.__mat.append([])
+				self.value.append([])
 				for num in row:
-					self.__mat[-1].append(num)
+					self.value[-1].append(num)
 		except TypeError:
 			raise ValueError("Matrix can be created only from a 2D iterable object with numbers. " \
 			                 "Got non 2D object.")
 
-		self.__n_rows = len(self.__mat)
-		self.__n_cols = len(self.__mat[0])
-		for row in self.__mat:
+		self.__n_rows = len(self.value)
+		self.__n_cols = len(self.value[0])
+		for row in self.value:
 			if len(row) != self.__n_cols:
 				raise ValueError("Matrix can be created only from a 2D iterable object with numbers. " \
 				                 "Got object with diferent lenght of rows.")
@@ -41,9 +41,9 @@ class Matrix:
 		try:
 			if type(index) == tuple:
 				if len(index) == 2:
-					return self.__mat[index[0]][index[1]]
+					return self.value[index[0]][index[1]]
 			else:
-				return self.__mat[index]
+				return self.value[index]
 		except TypeError:
 			raise TypeError("matrix indices must be integers or slices, not " + type(index))
 		except IndexError:
@@ -95,4 +95,4 @@ class Matrix:
 		return Matrix(((sum(self[i, c] * other[c, j] for c in range(n)) for j in range(m)) for i in range(k)))
 
 	def __str__(self) -> str:
-		return '\n'.join(['\t'.join(map(str, row)) for row in self.__mat])
+		return '\n'.join(['\t'.join(map(str, row)) for row in self.value])
