@@ -3,7 +3,7 @@ from typing import Union
 
 class Matrix:
 	"""
-	A math objects that represents rectangular array of numbers.
+	A math object that represents rectangular array of numbers.
 	"""
 
 	def __init__(self, array):
