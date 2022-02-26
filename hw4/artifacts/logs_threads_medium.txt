@@ -1,0 +1,8 @@
+A job calculating integral of cos in [0.000, 0.223] started in 0.001125s
+A job calculating integral of cos in [0.223, 0.446] started in 0.001726s
+A job calculating integral of cos in [0.446, 0.669] started in 0.001756s
+A job calculating integral of cos in [0.669, 0.892] started in 0.002235s
+A job calculating integral of cos in [0.892, 1.115] started in 0.002263s
+A job calculating integral of cos in [1.115, 1.338] started in 0.002283s
+A job calculating integral of cos in [1.338, 1.561] started in 0.002486s
+A job calculating integral of cos in [1.561, 1.571] started in 0.002533s
