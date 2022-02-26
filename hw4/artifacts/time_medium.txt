@@ -1,0 +1,14 @@
+ThreadPoolExecutor  (jobs=1):	0.000413s
+ProcessPoolExecutor (jobs=1):	0.010522s
+ThreadPoolExecutor  (jobs=2):	0.000721s
+ProcessPoolExecutor (jobs=2):	0.012009s
+ThreadPoolExecutor  (jobs=3):	0.001370s
+ProcessPoolExecutor (jobs=3):	0.018713s
+ThreadPoolExecutor  (jobs=4):	0.007282s
+ProcessPoolExecutor (jobs=4):	0.021302s
+ThreadPoolExecutor  (jobs=5):	0.000989s
+ProcessPoolExecutor (jobs=5):	0.016617s
+ThreadPoolExecutor  (jobs=6):	0.003042s
+ProcessPoolExecutor (jobs=6):	0.018739s
+ThreadPoolExecutor  (jobs=7):	0.002590s
+ProcessPoolExecutor (jobs=7):	0.025063s

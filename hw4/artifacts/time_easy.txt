@@ -1,0 +1,3 @@
+Sequential:      2.7799s
+Multithreading:  2.9615s
+Multiprocessing: 0.8165s
