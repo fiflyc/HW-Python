@@ -6,6 +6,7 @@ from src.thread_proc_test import (
 	test_proc
 )
 from src.integrate import test_int_threads, test_int_procs
+from src.messages import run as messages_run
 
 
 def easy():
@@ -27,6 +28,10 @@ def medium():
 			out.write(f'ProcessPoolExecutor (jobs={n_jobs}):\t{time_p:.6f}s\n')
 
 
+def hard():
+	messages_run('artifacts/logs_hard.txt')
+
+
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
 		print("Usage: python3 run.py [PART]\nwhere PART = easy | medium | hard")
@@ -35,6 +40,6 @@ if __name__ == '__main__':
 	elif sys.argv[1] == 'medium':
 		medium()
 	elif sys.argv[1] == 'hard':
-		pass
+		hard()
 	else:
 		print("Usage: python3 run.py [PART]\nwhere PART = easy | medium | hard")
