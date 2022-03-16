@@ -15,3 +15,7 @@ Run easy: `python3 hw4/run.py easy`
 Run medium: `python3 hw4/run.py medium`
 
 Run hard: `python3 hw4/run.py hard`
+
+## HW 5
+
+Run easy: `python3 hw5/easy.py [N_PICS] [FOLDER]`
